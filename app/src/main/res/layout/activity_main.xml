@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encrypt The Data "
+        android:id="@+id/id1"
+        android:textSize="30sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_margin="5dp"
+        android:layout_below="@id/id1"
+        android:id="@+id/id2"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By pressing select; you will encrypt the whole input string to k=3 encryption. "
+        android:id="@+id/id3"
+        android:textColor="#094099"
+        android:layout_margin="10dp"
+        android:layout_below="@id/id2"
+        android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id3"
+        android:id="@+id/id4">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT"
+            android:textColor="#ffffff"
+            android:backgroundTint="#094099"
+
+            android:layout_margin="5dp"
+
+            android:textSize="30sp"
+            android:onClick="select"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wanna Decrypt ?"
+            android:textColor="#ffffff"
+            android:backgroundTint="#094099"
+
+            android:layout_margin="5dp"
+
+            android:textSize="30sp"
+            android:onClick="select1"/>
+    </LinearLayout>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Your encrypted data:-"
+    android:id="@+id/id5"
+    android:layout_below="@id/id4"
+    android:textSize="30sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COPY"
+        android:textColor="#ffffff"
+        android:backgroundTint="#094099"
+        android:id="@+id/id6"
+        android:layout_margin="5dp"
+        android:onClick="copy"
+        android:layout_below="@id/id5"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#000000"
+        android:id="@+id/id7"
+        android:layout_margin="10dp"
+        android:layout_below="@id/id6"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
+</ScrollView>
